@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USPS Receipt</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bangers|Roboto'>
+    <link rel="stylesheet" href="receipt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+<body>
+  <div class="receipt">
+  <img class="watermark" src="images/wallground.png">
+  <div class="orderNo">
+    Order# <span id="Order #">71</span>: <span id="Order Name">Jet Set</span>
+  </div>
+  <div class="headerSubTitle">
+    Thank you for Ordering
+  </div>
+  <div class="headerTitle">
+    UNITED STATES POSTAL SERVICE 
+  </div>
+  <div class="headerSubTitle">
+    VAN METER<br>409 GRANT ST
+  VAN METER,<br>IA 50261-9722<br>
+  (800)275-8777
+  </div>
+  <div id="location">
+    USPS RECEIPT
+  </div>
+  <div id="date">
+    Saturday, Jun 13 2018 1:05:18
+  </div>
+  <svg id="barcode"></svg>
+  <div class="keepIt">
+    Keep your receipt!
+  </div>
+  <div class="keepItBody">
+    This original receipt is required to pick up any OnDemand items* or for Returns. Undamaged merchandise can be returned for a refund within 24 hours. Faulty goods can be exchanged anytime during this convention while the vendor hall is open. No returns are allowed for OnDemand items except at the discretion of United State Postal Service staff. *Unclaimed on-demand items can be claimed without receipt in the final hours of the convention by describing the order in detail.
+  </div>
+  <hr>
+
+  <!-- Items Purchased -->
+  <div class="items">
+    <div class="item">
+      <div class="itemRow">
+        <div class="itemName">PRODUCT</div>
+        <div class="itemPrice itemTaxable">$2.00</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">DNC-P01</div>
+        <div class="itemData2">DaniCojo</div>
+        <div class="itemData3 itemQuantity">10</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">Print</div>
+        <div class="itemData2">Reg(WS) 11x17 Bordered</div>
+        <div class="itemData3">$20.00</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="itemRow">
+        <div class="itemName">DEBIT CARD REMIT</div>
+        <div class="itemPrice itemTaxable">$1.25</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">Card Name:</div>
+        <div class="itemData2">VISA</div>
+        <div class="itemData3 itemQuantity">10</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">Account #:</div>
+        <div class="itemData2">XXXXXXXXXXXXXX1758</div>
+        <div class="itemData3">$12.25</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">Transaction #:</div>
+        <div class="itemData2">259</div>
+        <div class="itemData3 itemQuantity">10</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">Receipt #:</div>
+        <div class="itemData2">036453</div>
+        <div class="itemData3">$12.25</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">Debit Card Purchase:</div>
+        <div class="itemData2">$3500.75</div>
+        <div class="itemData3 itemQuantity">10</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">AID:</div>
+        <div class="itemData2">A0000000980840</div>
+        <div class="itemData3">$12.25</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">AL:</div>
+        <div class="itemData2">US DEBIT</div>
+        <div class="itemData3 itemQuantity">10</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">PIN:</div>
+        <div class="itemData2">Verified</div>
+        <div class="itemData3">$12.25</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Totals -->
+  <hr>
+<div class="flex">
+    <div id="qrcode"></div>
+    <div class="totals">
+      <div class="section">
+        <div class="row">
+          <div class="col1"></div>
+          <div class="col2">Subtotal</div>
+          <div class="col3">$61.25</div>
+        </div>
+        <div class="row">
+          <div class="col1">0.00%</div>
+          <div class="col2">Subtotal</div>
+          <div class="col3">$61.25</div>
+        </div>
+        <div class="row">
+          <div class="col1">2.75%</div>
+          <div class="col2">Credit Card Fee</div>
+          <div class="col3">$1.68</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="col1">Total</div>
+          <div class="col2"></div>
+          <div class="col3">$62.93</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="col1">Tendered</div>
+          <div class="col2"></div>
+          <div class="col3"></div>
+        </div>
+        <div class="row">
+          <div class="col1">Change</div>
+          <div class="col2"></div>
+          <div class="col3">$62.93</div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="footer">
+    <div class="eta">UNITED STATES POSTAL SERVICE</div>
+    <div class="printType">USPS customer copy</div>
+  </div>
+</div>
+<div class="row2"  >
+  <div class="logo">
+      <a href="track1.html" class="btn8">RETURN BACK &#9750;</a>
+    </div>
+   </div>
+<script src='https://cdn.jsdelivr.net/npm/jsbarcode@3.8.0/dist/barcodes/JsBarcode.code128.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js'></script>
+<script src="receipt.js"></script>
+</body>
+</html>
