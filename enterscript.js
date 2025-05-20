@@ -22,7 +22,7 @@ inputs.forEach((input, index)=>{
   })
   input.addEventListener('keyup', ()=>{
     const enteredvalue = Array.from(inputs).map(input => input.value).join('');
-    if(enteredvalue ==='060824'){
+    if(enteredvalue ==='028492'){
       window.location.href = 'track1.html'
     }
 })
